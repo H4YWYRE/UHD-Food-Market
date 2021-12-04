@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Volunteer with UHD</title>
+   </head>
+
+    <!-- this is for background -->
+    <style type = "text/css">
+        body
+        { 
+             background-image: url(volunteer1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size : 100% 100%;
+        }
+        p  
+        { font-size: 18pt;
+         color: #0051A7;
+         text-indent: 1em;
+         font-family: 'Times New Roman', Times, serif, sans-serif; 
+         font-weight: bold;
+        }
+    .dark 
+       { 
+         font-weight: bold; 
+       }
+    </style>
+
+   <body style="text-align: center;">
+    <h1 style="color: #5499C7;">
+        Let's Volunteer
+    </h1>
+
+      <p>Please click on the button to begin register !!</p>
+
+      <button onClick="fill()">
+        click here
+      </button>
+      <p id="fill_down"></p>
+
+        <script>
+            var down = document.getElementById("fill_down");
+            function fill() 
+        {
+            // Create a form synamically
+            var form = document.createElement("form");
+            form.setAttribute("method", "post");
+            form.setAttribute("action", "submit.html");
+
+            // Create an input element for names
+            var Name = document.createElement("input");
+            Name.setAttribute("type", "text");
+            Name.setAttribute("name", "names");
+            Name.setAttribute("placeholder", "Names");
+            
+
+            // Create an input element for email id
+            var ID = document.createElement("input");
+            ID.setAttribute("type", "text");
+            ID.setAttribute("name", "emailID");
+            ID.setAttribute("placeholder", "E-mail ID");
+           
+            // Create an input element for email id
+            
+            var reas = document.createElement("input");
+            reas.setAttribute("type", "text");
+            reas.setAttribute("name", "reason");
+            reas.setAttribute("placeholder", "Reason for volunteer?");
+            
+
+            // Create a submit button
+            var s = document.createElement("input");
+            s.setAttribute("type", "submit");
+            s.setAttribute("value", "Submit");
+
+        
+
+            // Append the names input to the form
+            form.append(Name); 
+            
+            // Append the email ID to the form
+            form.append(ID); 
+           
+            // Append the reason input to the form
+            form.append(reas);
+
+            
+            // Append the button to the form
+            form.append(s); 
+
+            document.getElementsByTagName("body")[0]
+           .appendChild(form);
+        }
+        </script>
+   </body>
+</html>
