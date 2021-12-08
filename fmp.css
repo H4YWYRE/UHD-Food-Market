@@ -84,7 +84,7 @@ color: #FFFFFF;
     position: absolute;
     width: 58px;
     height: 17px;
-    left: 52px;
+    left: 40px;
     top: 126px;
 
     font-family: Montserrat;
@@ -117,9 +117,9 @@ color: #FFFFFF;
 }
 #volunteer {
     position: absolute;
-    width: 153px;
+    width: 200px;
     height: 17px;
-    left: 239px;
+    left: 230px;
     top: 126px;
 
     font-family: Montserrat;
@@ -136,7 +136,7 @@ color: #FFFFFF;
     position: absolute;
     width: 153px;
     height: 17px;
-    left: 408px;
+    left: 412px;
     top: 126px;
 
     font-family: Montserrat;
@@ -151,7 +151,7 @@ color: #FFFFFF;
 }
 #appointment {
     position: absolute;
-    width: 178px;
+    width: 188px;
     height: 17px;
     left: 485px;
     top: 126px;
