@@ -151,9 +151,9 @@ color: #FFFFFF;
 }
 #appointment {
     position: absolute;
-    width: 350px;
+    width: 200px;
     height: 17px;
-    left: 700px;
+    left: 600px;
     top: 126px;
 
     font-family: Montserrat;
